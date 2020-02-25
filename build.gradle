@@ -25,14 +25,9 @@ dependencies {
 	compileOnly 'org.projectlombok:lombok'
 	runtimeOnly 'com.h2database:h2'
 	annotationProcessor 'org.projectlombok:lombok'
-	testImplementation('org.springframework.boot:spring-boot-starter-test') {
-		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
-	}
+	testImplementation('org.springframework.boot:spring-boot-starter-test')
 
 	implementation 'org.springframework.boot:spring-boot-devtools'
 	implementation 'org.jetbrains:annotations:15.0'
-}
-
-test {
-	useJUnitPlatform()
+    implementation 'junit:junit:4.12'
 }
