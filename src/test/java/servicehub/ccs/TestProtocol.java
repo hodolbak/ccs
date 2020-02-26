@@ -49,12 +49,33 @@ public class TestProtocol {
         header2.setRequestResponseType(RequestResponseType.RESPONSE);
         header2.setProtocol(protocol);
         em.persist(header2);
-//
-//        List<ProtocolHeader> headers = new ArrayList<>();
-//        headers.add(header1);
-//        headers.add(header2);
-//
-//        protocolService.insertProtocol(protocol, headers);
+
+    }
+
+
+    @Test
+    @Rollback(false)
+    public void createProtocol2() throws Exception {
+        Protocol protocol = new Protocol();
+        protocol.setName("protocolTest");
+        protocol.setSchema("HTTP");
+
+        List<ProtocolHeader> protocolHeaders = new ArrayList<>();
+
+        ProtocolHeader header1 = new ProtocolHeader();
+        header1.setKey("Header1");
+        header1.setValue("Header1");
+        header1.setRequestResponseType(RequestResponseType.REQUEST);
+
+        ProtocolHeader header2 = new ProtocolHeader();
+        header2.setKey("Header2");
+        header2.setValue("Header2");
+        header2.setRequestResponseType(RequestResponseType.RESPONSE);
+
+        protocolHeaders.add(header1);
+        protocolHeaders.add(header2);
+
+        protocolService.insertProtocol(protocol, protocolHeaders);
     }
 
 }

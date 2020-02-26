@@ -22,9 +22,12 @@ public class ProtocolService {
         protocol.setSchema(reqProtocol.getSchema());
 
         for(ProtocolHeader header : headers) {
-            protocol.getProtocolHeaders().add(header);
+            protocol.addProtocolHeader(header);
         }
 
+//        for(ProtocolHeader header : headers) {
+//            protocol.getProtocolHeaders().add(header);
+//        }
         protocolRepository.save(protocol);
 
         return protocol.getId();

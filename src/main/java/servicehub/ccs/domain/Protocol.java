@@ -21,4 +21,9 @@ public class Protocol {
     // 프로토콜별 헤더
     @OneToMany(mappedBy = "protocol", cascade = CascadeType.ALL)
     private List<ProtocolHeader> protocolHeaders = new ArrayList<>();
+
+    public void addProtocolHeader(ProtocolHeader protocolHeader) {
+        protocolHeaders.add(protocolHeader);
+        protocolHeader.setProtocol(this);
+    }
 }
