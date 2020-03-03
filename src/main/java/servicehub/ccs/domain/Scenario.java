@@ -4,10 +4,7 @@ import lombok.Getter;
 import lombok.Setter;
 import servicehub.ccs.domain.sequence.Sequence;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -25,8 +22,12 @@ public class Scenario {
     private String imageUrl;
 
     // 시나리오별 시퀀스 목록
-    @OneToMany(mappedBy = "scenario")
+    @OneToMany(mappedBy = "scenario", cascade = CascadeType.ALL)
     private List<Sequence> sequences = new ArrayList<>();
 
+    public void addSequences(Sequence sequence) {
+        sequences.add(sequence);
+        sequence.setScenario(this);
+    }
 }
 

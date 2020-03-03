@@ -2,9 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84db3910-0874-4879-9151-0184b94c40a9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/servicehub/ccs/TestScenario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servicehub/ccs/domain/Protocol.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servicehub/ccs/domain/Protocol.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servicehub/ccs/service/ProtocolService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servicehub/ccs/service/ProtocolService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/servicehub/ccs/domain/Protocol.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/servicehub/ccs/domain/Protocol.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servicehub/ccs/domain/Scenario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servicehub/ccs/domain/Scenario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servicehub/ccs/domain/sequence/Sequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servicehub/ccs/domain/sequence/Sequence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/servicehub/ccs/TestProtocol.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/servicehub/ccs/TestProtocol.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,6 +33,9 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
         <projects_view />
       </state>
     </system>
@@ -54,40 +70,7 @@
       <recent name="servicehub.ccs.service" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.TestProtocol.createProtocol">
-    <configuration name="CcsApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="servicehub.ccs.CcsApplication" />
-      <module name="ccs.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="servicehub.ccs.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestProtocol" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;servicehub.ccs.TestProtocol&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Gradle.TestScenario.selectProtocol">
     <configuration name="TestProtocol.createProtocol" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -108,12 +91,72 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="TestProtocol.createProtocol2" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TestScenario" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;servicehub.ccs.TestProtocol.createProtocol2&quot;" />
+        <option name="scriptParameters" value="--tests &quot;servicehub.ccs.TestScenario&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="TestScenario.createProtocol" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;servicehub.ccs.TestScenario.createProtocol&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="TestScenario.createProtocol2" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;servicehub.ccs.TestScenario.createProtocol2&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="TestScenario.selectProtocol" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;servicehub.ccs.TestScenario.selectProtocol&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -130,10 +173,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.TestScenario.selectProtocol" />
+        <item itemvalue="Gradle.TestScenario.createProtocol2" />
+        <item itemvalue="Gradle.TestScenario.createProtocol" />
+        <item itemvalue="Gradle.TestScenario" />
         <item itemvalue="Gradle.TestProtocol.createProtocol" />
-        <item itemvalue="Gradle.TestProtocol.createProtocol2" />
-        <item itemvalue="Gradle.TestProtocol" />
-        <item itemvalue="Application.CcsApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -181,57 +225,65 @@
       <option name="project" value="LOCAL" />
       <updated>1582649267923</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="protocol &amp; protocoheader insert">
+      <created>1582730182580</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1582730182580</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init commit &amp; push" />
-    <option name="LAST_COMMIT_MESSAGE" value="init commit &amp; push" />
+    <MESSAGE value="protocol &amp; protocoheader insert" />
+    <option name="LAST_COMMIT_MESSAGE" value="protocol &amp; protocoheader insert" />
   </component>
   <component name="WindowStateProjectService">
     <state x="751" y="378" width="432" height="293" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1582605690436">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="751" y="378" width="432" height="293" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1582605690436" />
-    <state x="609" y="113" key="CommitChangelistDialog2" timestamp="1582649265246">
+    <state x="609" y="113" key="CommitChangelistDialog2" timestamp="1582730181259">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="609" y="113" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1582616740254" />
-    <state x="609" y="113" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1582649265246" />
+    <state x="609" y="113" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1582730181259" />
     <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1582616886696">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1582616886696" />
-    <state width="1877" height="118" key="GridCell.Tab.0.bottom" timestamp="1582720147612">
+    <state width="1877" height="655" key="GridCell.Tab.0.bottom" timestamp="1583248838868">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="250" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1582615540478" />
-    <state width="1877" height="118" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582720147612" />
-    <state width="1877" height="118" key="GridCell.Tab.0.center" timestamp="1582720147612">
+    <state width="1877" height="655" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1583248838868" />
+    <state width="1877" height="655" key="GridCell.Tab.0.center" timestamp="1583248838868">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="250" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1582615540478" />
-    <state width="1877" height="118" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582720147612" />
-    <state width="1877" height="118" key="GridCell.Tab.0.left" timestamp="1582720147612">
+    <state width="1877" height="655" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1583248838868" />
+    <state width="1877" height="655" key="GridCell.Tab.0.left" timestamp="1583248838867">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="250" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1582615540478" />
-    <state width="1877" height="118" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582720147612" />
-    <state width="1877" height="118" key="GridCell.Tab.0.right" timestamp="1582720147612">
+    <state width="1877" height="655" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1583248838867" />
+    <state width="1877" height="655" key="GridCell.Tab.0.right" timestamp="1583248838868">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="250" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1582615540478" />
-    <state width="1877" height="118" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582720147612" />
+    <state width="1877" height="655" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1583248838868" />
     <state x="461" y="162" key="SettingsEditor" timestamp="1582642438296">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1582616810415" />
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1582642438296" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1582649278501">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1582730193959">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1582616872620" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1582649278501" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1582730193959" />
     <state x="652" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1582615631200">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

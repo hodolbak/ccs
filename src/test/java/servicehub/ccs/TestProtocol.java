@@ -32,20 +32,20 @@ public class TestProtocol {
     @Rollback(false)
     public void createProtocol() throws Exception {
         Protocol protocol = new Protocol();
-        protocol.setName("protocolTest");
-        protocol.setSchema("HTTP");
+        protocol.setName("VPUSH Test");
+        protocol.setSchema("VPUSH");
         em.persist(protocol);
 
         ProtocolHeader header1 = new ProtocolHeader();
-        header1.setKey("Header1");
-        header1.setValue("Header1");
+        header1.setKey("Header5555555");
+        header1.setValue("Header555555");
         header1.setRequestResponseType(RequestResponseType.REQUEST);
         header1.setProtocol(protocol);
         em.persist(header1);
 
         ProtocolHeader header2 = new ProtocolHeader();
-        header2.setKey("Header2");
-        header2.setValue("Header2");
+        header2.setKey("Header666666");
+        header2.setValue("Header666666");
         header2.setRequestResponseType(RequestResponseType.RESPONSE);
         header2.setProtocol(protocol);
         em.persist(header2);
@@ -57,19 +57,19 @@ public class TestProtocol {
     @Rollback(false)
     public void createProtocol2() throws Exception {
         Protocol protocol = new Protocol();
-        protocol.setName("protocolTest");
-        protocol.setSchema("HTTP");
+        protocol.setName("protocolTest----22");
+        protocol.setSchema("VPUSH");
 
         List<ProtocolHeader> protocolHeaders = new ArrayList<>();
 
         ProtocolHeader header1 = new ProtocolHeader();
-        header1.setKey("Header1");
-        header1.setValue("Header1");
+        header1.setKey("Header555555");
+        header1.setValue("Header55555");
         header1.setRequestResponseType(RequestResponseType.REQUEST);
 
         ProtocolHeader header2 = new ProtocolHeader();
-        header2.setKey("Header2");
-        header2.setValue("Header2");
+        header2.setKey("Header6666");
+        header2.setValue("Header66666");
         header2.setRequestResponseType(RequestResponseType.RESPONSE);
 
         protocolHeaders.add(header1);

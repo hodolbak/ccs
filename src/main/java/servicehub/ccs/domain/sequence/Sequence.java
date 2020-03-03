@@ -24,10 +24,15 @@ public class Sequence {
     @Enumerated(EnumType.STRING)
     private RequestResponseType requestResponseType;
 
+    // DiscriminatorColumn 으로 지정된 flowType 을 get set 하기 위해 저장. jpa 저장시 기본 입력되므로 insert, update false 로 지정.
+    @Column(insertable=false, updatable=false)
+    private String flowType;
+
     private int orderNum;
 
     // 해당 시나리오
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "scenario_id")
     private Scenario scenario;
+
 }
