@@ -4,6 +4,7 @@ import lombok.Getter;
 import lombok.Setter;
 import servicehub.ccs.domain.Scenario;
 import servicehub.ccs.domain.enums.RequestResponseType;
+import servicehub.ccs.domain.enums.SequenceFlowType;
 
 import javax.persistence.*;
 
@@ -16,7 +17,7 @@ import javax.persistence.*;
 @DiscriminatorColumn(name = "flowType")
 @Getter
 @Setter
-public class Sequence {
+public abstract class Sequence {
     @Id
     @GeneratedValue
     private Long id;
@@ -25,8 +26,9 @@ public class Sequence {
     private RequestResponseType requestResponseType;
 
     // DiscriminatorColumn 으로 지정된 flowType 을 get set 하기 위해 저장. jpa 저장시 기본 입력되므로 insert, update false 로 지정.
-    @Column(insertable=false, updatable=false)
-    private String flowType;
+    @Enumerated(EnumType.STRING)
+    @Column(insertable = false, updatable = false)
+    private SequenceFlowType flowType;
 
     private int orderNum;
 
@@ -34,5 +36,6 @@ public class Sequence {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "scenario_id")
     private Scenario scenario;
+
 
 }

@@ -18,5 +18,5 @@ public class ProtocolSequence extends Sequence {
     // 시퀀스 구성요소가 프로토콜인 경우 해당 프로토콜 정보
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "flow_protocol_id")
-    private Protocol sequenceInfo;
+    private Protocol protocolInfo;
 }
